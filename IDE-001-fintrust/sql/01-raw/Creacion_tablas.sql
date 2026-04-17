@@ -1,5 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS raw_fintrust;
-
+CREATE SCHEMA IF NOT EXISTS staging_fintrust;
+CREATE SCHEMA IF NOT EXISTS prod_fintrust;
 
 CREATE TABLE IF NOT EXISTS prueba-maps-283720.raw_fintrust.customers (
 customer_id STRING,
@@ -44,3 +45,5 @@ payment_channel STRING,
 payment_status STRING,
 loaded_at TIMESTAMP
 );
+
+
