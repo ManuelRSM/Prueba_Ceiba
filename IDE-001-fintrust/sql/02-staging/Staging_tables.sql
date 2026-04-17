@@ -29,3 +29,11 @@ SELECT
     END AS is_overdue
 FROM `prueba-maps-283720.raw_fintrust.installments`
 );
+
+
+
+CREATE OR REPLACE TABLE prueba-maps-283720.staging_fintrust.installments AS(
+SELECT 
+   *
+FROM `prueba-maps-283720.raw_fintrust.customers`
+);
