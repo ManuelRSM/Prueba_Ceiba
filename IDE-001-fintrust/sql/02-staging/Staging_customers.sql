@@ -1,5 +1,5 @@
 CREATE OR REPLACE TABLE prueba-maps-283720.staging_fintrust.customers AS
-SELECT *
+SELECT * EXCEPT(rn)
 FROM (
     SELECT 
        CAST(customer_id AS STRING) AS customer_id,  

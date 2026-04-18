@@ -1,5 +1,5 @@
 CREATE OR REPLACE TABLE prueba-maps-283720.staging_fintrust.installments AS
-SELECT *
+SELECT * EXCEPT(rn)
 FROM (
     SELECT 
         CAST(installment_id AS STRING) AS installment_id,
@@ -9,11 +9,6 @@ FROM (
         CAST(principal_due AS NUMERIC) AS principal_due,
         CAST(interest_due AS NUMERIC) AS interest_due, 
         CAST(installment_status AS STRING) AS installment_status,
-
-        CASE 
-            WHEN SAFE_CAST(due_date AS DATE) < CURRENT_DATE() THEN TRUE 
-            ELSE FALSE 
-        END AS is_overdue,
 
         ROW_NUMBER() OVER (
             PARTITION BY loan_id, installment_number

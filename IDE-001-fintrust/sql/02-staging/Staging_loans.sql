@@ -1,5 +1,5 @@
 CREATE OR REPLACE TABLE prueba-maps-283720.staging_fintrust.loans AS
-SELECT *
+SELECT * EXCEPT(rn)
 FROM (
     SELECT
         CAST(loan_id AS STRING) AS loan_id,

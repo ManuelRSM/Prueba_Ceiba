@@ -1,5 +1,5 @@
 CREATE OR REPLACE TABLE prueba-maps-283720.staging_fintrust.payments AS
-SELECT *
+SELECT * EXCEPT(rn)
 FROM (
     SELECT 
         CAST(payment_id AS STRING) AS payment_id,
