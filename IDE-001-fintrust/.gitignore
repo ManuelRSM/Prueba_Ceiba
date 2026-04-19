@@ -1,0 +1,5 @@
+# Ignorar las llaves reales con credenciales privadas
+python/prueba-maps-283720-f3ada9b45580.json
+
+# NO ignorar el ejemplo (el que tiene la estructura)
+!python/credentials-example.json
