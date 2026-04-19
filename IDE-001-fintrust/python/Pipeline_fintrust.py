@@ -9,7 +9,7 @@ from google.api_core.exceptions import GoogleAPIError
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ruta/a/tu/llave.json"
 
 # El nombre exacto del archivo que descargaste
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\janus\Documents\Proyectos PY\Prueba GCP\Prueba_Ceiba\IDE-001-fintrust\python\prueba-maps-283720-f3ada9b45580.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\janus\Documents\Proyectos PY\Prueba GCP\Prueba_Ceiba\IDE-001-fintrust\python\prueba-maps-283720-bc3c1e459276.json"
 
 PROJECT_ID = "prueba-maps-283720"
 SQL_ROOT_DIR = 'sql'
@@ -27,7 +27,7 @@ def run_bigquery_script(client, file_path):
     """
     Lee el archivo SQL y lo envía a BigQuery.
     """
-    print(f"--- 🚀 Ejecutando en BigQuery: {file_path} ---")
+    print(f"---Ejecutando en BigQuery: {file_path} ---")
     
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
