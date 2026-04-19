@@ -9,7 +9,7 @@ from google.api_core.exceptions import GoogleAPIError
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ruta/a/tu/llave.json"
 
 # El nombre exacto del archivo que descargaste
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\janus\Documents\Proyectos PY\Prueba GCP\Prueba_Ceiba\IDE-001-fintrust\python\prueba-maps-283720-bc3c1e459276.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"IDE-001-fintrust\python\prueba-maps-283720-bc3c1e459276.json"
 
 PROJECT_ID = "prueba-maps-283720"
 SQL_ROOT_DIR = 'sql'

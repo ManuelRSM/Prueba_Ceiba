@@ -85,7 +85,7 @@ pip install google-cloud-bigquery
 Llave JSON: Coloque su archivo de credenciales .json dentro de la carpeta python/. (El unico archivo .json del proyecto)
 
 -Variables Globales: Actualice los siguientes valores al inicio del script:
-JSON_KEY_NAME: El nombre del archivo JSON que colocó en la carpeta (ej: "mi-llave.json").
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]: El nombre del archivo JSON que colocó en la carpeta (ej: "mi-llave.json").
 PROJECT_ID: El ID de su proyecto en Google Cloud Console.
 
 
